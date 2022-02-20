@@ -10,6 +10,7 @@ def ConversionRate(carCount,ARMWashes,plansSold):
     ARMWashes = int(ARMWashes)
     plansSold = int(plansSold)
     rate = (plansSold/(carCount-ARMWashes))
-    print("The Conversion Rate is {:.2%}".format(rate))
+    #print("The Conversion Rate is {:.2%}".format(rate))
+    return (rate * 100)
 
 #ConversionRate(carCount,ARMWashes,plansSold)

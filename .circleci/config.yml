@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: python -m unittest conversion.py
+          command: python -m unittest calculator.py
       - store_test_results:
           path: test-reports
       - store_artifacts:

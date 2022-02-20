@@ -37,8 +37,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          working_directory: ~/tests/
-          command: test_conversion.py
+          command: python -m unittest conversion.py
       - store_test_results:
           path: test-reports
       - store_artifacts:

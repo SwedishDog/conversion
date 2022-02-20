@@ -36,7 +36,11 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: pytest
+          command: tests/test_conversion.py
+      - store_test_results:
+          path: test-reports
+      - store_artifacts:
+          path: test-reports
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows

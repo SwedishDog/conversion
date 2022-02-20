@@ -2,14 +2,14 @@ import unittest
 from calculator import ConversionRate
 
 class TestCalc(unittest.TestCase):
-    def correct(self): 
+    def test_correct(self): 
         carcount = 100
         armwashes = 50
         planssold = 5
         result = ConversionRate(carcount, armwashes, planssold)
         self.assertEqual(result,10)
 
-    def incorrect(self):
+    def test_incorrect(self):
         carcount = 100
         armwashes = 40
         planssold = 10

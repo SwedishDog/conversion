@@ -9,12 +9,5 @@ class TestCalc(unittest.TestCase):
         result = ConversionRate(carcount, armwashes, planssold)
         self.assertEqual(result,10)
 
-    def test_incorrect(self):
-        carcount = 100
-        armwashes = 40
-        planssold = 10
-        result = ConversionRate(carcount, armwashes, planssold)
-        self.assertEqual(result, 50)
-
 if __name__ == '__main__':
     unittest.main()

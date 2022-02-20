@@ -1,0 +1,4 @@
+tests/*
+_pycache_/
+.pytest_cache/
+test-results.xml

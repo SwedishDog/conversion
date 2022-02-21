@@ -8,6 +8,3 @@ class TestCalc(unittest.TestCase):
         planssold = 5
         result = ConversionRate(carcount, armwashes, planssold)
         self.assertEqual(result,10)
-
-if __name__ == '__main__':
-    unittest.main()

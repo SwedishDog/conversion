@@ -1,4 +1,6 @@
-tests/*
+tests/_pycache_/
 _pycache_/
 .pytest_cache/
 test-results.xml
+.coverage
+

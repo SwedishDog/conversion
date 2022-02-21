@@ -5,12 +5,15 @@
 #ARMWashes = input("How many of those cars were members? ")
 #plansSold = input("How many plans did we sell today? ")
 
-def ConversionRate(carCount,ARMWashes,plansSold):
+def ConversionRate(carCount,ARMWashes,plansSold, *bee):
     carCount = int(carCount)
     ARMWashes = int(ARMWashes)
     plansSold = int(plansSold)
     rate = (plansSold/(carCount-ARMWashes))
-    #print("The Conversion Rate is {:.2%}".format(rate))
+    
+    if bee: 
+        print("The Conversion Rate is {:.2%}".format(rate))
+    
     return (rate * 100)
 
 #ConversionRate(carCount,ARMWashes,plansSold)
